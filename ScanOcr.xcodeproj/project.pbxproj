@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D9B8162D2CE8645D90DB216 /* Pods_ScanOcr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F20A862BD1BC1E1434DFFEF /* Pods_ScanOcr.framework */; };
 		2764A92A2C2C9E2E0004397D /* ScanOcrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2764A9292C2C9E2E0004397D /* ScanOcrApp.swift */; };
 		2764A92C2C2C9E2E0004397D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2764A92B2C2C9E2E0004397D /* ContentView.swift */; };
 		2764A92E2C2C9E300004397D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2764A92D2C2C9E300004397D /* Assets.xcassets */; };
 		2764A9312C2C9E300004397D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2764A9302C2C9E300004397D /* Preview Assets.xcassets */; };
+		27DC4C102C2CA176001B6F00 /* ScanData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DC4C0F2C2CA176001B6F00 /* ScanData.swift */; };
+		27DC4C122C2CA527001B6F00 /* ScanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DC4C112C2CA527001B6F00 /* ScanerView.swift */; };
+		27DC4C142C2CAA8C001B6F00 /* TextRecongnizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DC4C132C2CAA8C001B6F00 /* TextRecongnizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,12 @@
 		2764A92B2C2C9E2E0004397D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2764A92D2C2C9E300004397D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2764A9302C2C9E300004397D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		27DC4C0F2C2CA176001B6F00 /* ScanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanData.swift; sourceTree = "<group>"; };
+		27DC4C112C2CA527001B6F00 /* ScanerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanerView.swift; sourceTree = "<group>"; };
+		27DC4C132C2CAA8C001B6F00 /* TextRecongnizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecongnizer.swift; sourceTree = "<group>"; };
+		4C9EE533B50132F2A2A5D451 /* Pods-ScanOcr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanOcr.release.xcconfig"; path = "Target Support Files/Pods-ScanOcr/Pods-ScanOcr.release.xcconfig"; sourceTree = "<group>"; };
+		9F20A862BD1BC1E1434DFFEF /* Pods_ScanOcr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScanOcr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E224D564F92D59A7707948C3 /* Pods-ScanOcr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanOcr.debug.xcconfig"; path = "Target Support Files/Pods-ScanOcr/Pods-ScanOcr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D9B8162D2CE8645D90DB216 /* Pods_ScanOcr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +48,8 @@
 			children = (
 				2764A9282C2C9E2E0004397D /* ScanOcr */,
 				2764A9272C2C9E2E0004397D /* Products */,
+				4C3D9968ED14071F0B39CE04 /* Pods */,
+				9D3C73807DA9B1B13DB74F9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +68,9 @@
 				2764A92B2C2C9E2E0004397D /* ContentView.swift */,
 				2764A92D2C2C9E300004397D /* Assets.xcassets */,
 				2764A92F2C2C9E300004397D /* Preview Content */,
+				27DC4C0F2C2CA176001B6F00 /* ScanData.swift */,
+				27DC4C112C2CA527001B6F00 /* ScanerView.swift */,
+				27DC4C132C2CAA8C001B6F00 /* TextRecongnizer.swift */,
 			);
 			path = ScanOcr;
 			sourceTree = "<group>";
@@ -67,6 +83,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4C3D9968ED14071F0B39CE04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E224D564F92D59A7707948C3 /* Pods-ScanOcr.debug.xcconfig */,
+				4C9EE533B50132F2A2A5D451 /* Pods-ScanOcr.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9D3C73807DA9B1B13DB74F9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F20A862BD1BC1E1434DFFEF /* Pods_ScanOcr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +107,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2764A9342C2C9E300004397D /* Build configuration list for PBXNativeTarget "ScanOcr" */;
 			buildPhases = (
+				21C8CF575BF6322928487962 /* [CP] Check Pods Manifest.lock */,
 				2764A9222C2C9E2E0004397D /* Sources */,
 				2764A9232C2C9E2E0004397D /* Frameworks */,
 				2764A9242C2C9E2E0004397D /* Resources */,
@@ -132,6 +166,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21C8CF575BF6322928487962 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScanOcr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2764A9222C2C9E2E0004397D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +198,9 @@
 			files = (
 				2764A92C2C2C9E2E0004397D /* ContentView.swift in Sources */,
 				2764A92A2C2C9E2E0004397D /* ScanOcrApp.swift in Sources */,
+				27DC4C142C2CAA8C001B6F00 /* TextRecongnizer.swift in Sources */,
+				27DC4C122C2CA527001B6F00 /* ScanerView.swift in Sources */,
+				27DC4C102C2CA176001B6F00 /* ScanData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +328,7 @@
 		};
 		2764A9352C2C9E300004397D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E224D564F92D59A7707948C3 /* Pods-ScanOcr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -275,6 +338,7 @@
 				DEVELOPMENT_TEAM = 6CY8S427LC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) requires permission to scan files.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,6 +359,7 @@
 		};
 		2764A9362C2C9E300004397D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C9EE533B50132F2A2A5D451 /* Pods-ScanOcr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -304,6 +369,7 @@
 				DEVELOPMENT_TEAM = 6CY8S427LC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) requires permission to scan files.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
